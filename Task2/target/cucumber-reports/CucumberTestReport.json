@@ -1,0 +1,91 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Sample Login Page",
+        "description": "",
+        "id": "sample-test-page;sample-login-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Launch google chrome",
+            "match": {
+              "location": "LoginStepDefinition.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user enters \"Brussels, Belgium (BRU-Brussels - National)\" and \"New York, New York\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brussels, Belgium (BRU-Brussels - National)",
+                  "offset": 13
+                },
+                {
+                  "val": "New York, New York",
+                  "offset": 63
+                }
+              ],
+              "location": "LoginStepDefinition.enter_keyword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "title of login page is displayed",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "take the screen shot the page",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "close browser",
+            "match": {
+              "location": "LoginStepDefinition.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sample Test Page",
+    "description": "",
+    "id": "sample-test-page",
+    "keyword": "Feature",
+    "uri": "login1.feature"
+  }
+]
